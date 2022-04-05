@@ -20,3 +20,17 @@ puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
+@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
+@store1.employees.create(first_name: "Jackson", last_name: "Ville", hourly_rate: 10)
+@store1.employees.create(first_name: "Darth", last_name: "Vader", hourly_rate: 20)
+@store1.employees.create(first_name: "Kuan", last_name: "Yew", hourly_rate: 30)
+@store1.employees.create(first_name: "Ishraf", last_name: "Patel", hourly_rate: 40)
+
+@store2.employees.create(first_name: "Brendan", last_name: "Fraser", hourly_rate: 100)
+@store2.employees.create(first_name: "Carrie", last_name: "Overwood", hourly_rate: 200)
+@store2.employees.create(first_name: "Bruce", last_name: "Almighty", hourly_rate: 300)
+@store2.employees.create(first_name: "Judas", last_name: "Priest", hourly_rate: 400)
+@store2.employees.create(first_name: "Coffee", last_name: "Milo", hourly_rate: 500)
+
+puts "Total Burnaby Employees: #{@store1.employees.count}"
+puts "Total Richmond Employees: #{@store2.employees.count}"
